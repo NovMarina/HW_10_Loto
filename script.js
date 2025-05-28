@@ -41,10 +41,21 @@ function statistics(minNumber, maxNumber, avg) {
             return JSON.stringify(info);
         }
     };
+
+    //-------№1------
     rsltInfo.innerHTML =
         `<p>Min value: ${minNumber}</p>
 <p>Max value: ${maxNumber}</p>
 <p>Average : ${avg}</p>`;
+
+//--------№2--------
+//     let htmlText = '<table>';
+//     for (const [key, value] of Object.entries(info)) {
+//         if (key !== 'toString')
+//             htmlText += `<tr><td>${key}:</td><td>${value}</td></tr>`;
+//     }
+//     htmlText += '</table>';
+//     rsltInfo.innerHTML = htmlText;
 }
 
 
