@@ -7,6 +7,20 @@
     <style>.box-result {
         height: 15rem;
     }
+
+    table {
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .box-numbers div {
+        width: 4rem;
+        height: 4rem;
+    }
     </style>
     <title>Loto</title>
 </head>
@@ -19,10 +33,20 @@
         <button id="btnGenerate" type="button" class="col col-4 fs-2 btn btn-md btn-light">Generate</button>
     </div>
 
-    <div class="row row-5 justify-content-center  m-3 fw-bold ">
+    <div class="row justify-content-center my-3">
+        <div class=" col-auto d-flex  box-numbers text-dark d-none">
+            <div class=" bg-light rounded d-flex align-items-center justify-content-center fs-2 mx-2 "></div>
+            <div class=" bg-light rounded d-flex align-items-center justify-content-center fs-2 mx-2"></div>
+            <div class=" bg-light rounded d-flex align-items-center justify-content-center fs-2 mx-2"></div>
+            <div class=" bg-light rounded d-flex align-items-center justify-content-center fs-2 mx-2"></div>
+            <div class=" bg-light rounded d-flex align-items-center justify-content-center fs-2 mx-2"></div>
+        </div>
+    </div>
+
+    <div class=" row row-5 justify-content-center m-3 fw-bold">
         <div class="col col-4 rounded bg-light box-result ">
             <div id="def" class="text-secondary p-3 fw-light fs-5"> Result:</div>
-            <div id="result" class="text-dark p-3 fw-normal fs-5 .d-none"></div>
+            <div id="result" class=" text-dark p-3 fw-normal fs-5 .d-none"></div>
         </div>
     </div>
 </div>
